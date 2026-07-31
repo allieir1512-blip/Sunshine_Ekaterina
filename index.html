@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Организация работы студии: управление записями, коммуникация и внутренние процессы</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <!-- Подключаем Tailwind CSS через CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -88,7 +89,95 @@
             </div>
         </section>
         
-        <!-- (Конец Блока 2) -->
+        <!-- Блок 3: Чек-лист -->
+        <div class="checklist bg-white p-8 rounded-2xl mt-10 mb-8 shadow-sm border-2 border-blue-50">
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-gray-900 mb-1">🚀 Чек-лист внедрения</h2>
+                <p class="text-sm text-gray-500">Отмечайте выполненное — прогресс сохранится</p>
+            </div>
+            
+            <h3 class="text-xs uppercase tracking-widest text-pink-500 font-bold mt-6 mb-3">Прямо сейчас</h3>
+            
+            <!-- Пункт 1 -->
+            <div class="chk-item flex gap-4 py-3 border-b border-gray-100 cursor-pointer transition-opacity hover:opacity-80 group">
+                <div class="w-6 h-6 border-2 border-gray-400 rounded-md shrink-0 mt-0.5 transition-colors group-[.checked]:bg-blue-600 group-[.checked]:border-blue-600 flex items-center justify-center">
+                    <svg class="opacity-0 group-[.checked]:opacity-100 text-white w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                </div>
+                <div>
+                    <strong class="block text-[15px] text-gray-900 transition-colors group-[.checked]:text-gray-400 group-[.checked]:line-through">Очистить замочки в детских группах</strong>
+                    <span class="text-[13px] text-gray-500">Чтобы в списках были только реально записанные</span>
+                </div>
+            </div>
+
+            <!-- Пункт 2 -->
+            <div class="chk-item flex gap-4 py-3 border-b border-gray-100 cursor-pointer transition-opacity hover:opacity-80 group">
+                <div class="w-6 h-6 border-2 border-gray-400 rounded-md shrink-0 mt-0.5 transition-colors group-[.checked]:bg-blue-600 group-[.checked]:border-blue-600 flex items-center justify-center">
+                    <svg class="opacity-0 group-[.checked]:opacity-100 text-white w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                </div>
+                <div>
+                    <strong class="block text-[15px] text-gray-900 transition-colors group-[.checked]:text-gray-400 group-[.checked]:line-through">Собрать согласия новых клиентов</strong>
+                    <span class="text-[13px] text-gray-500">Для юридической безопасности</span>
+                </div>
+            </div>
+
+            <!-- Прогресс-бар -->
+            <div class="mt-8">
+                <div class="h-1.5 bg-gray-100 rounded-full overflow-hidden">
+                    <div class="chk-progress-fill h-full bg-blue-600 w-0 transition-all duration-300"></div>
+                </div>
+                <div class="chk-progress-label text-[13px] text-gray-500 mt-2 text-right font-medium">0 из 2</div>
+            </div>
+        </div>
+
+        <!-- Подвал -->
+        <footer class="text-center py-10 mt-5 border-t border-gray-200">
+            <div class="mb-4">
+                <span class="bg-white inline-block px-4 py-1.5 rounded-full text-[13px] font-medium text-gray-900 border border-gray-200">🎬 86 мин видео → 📖 ~6 мин чтения</span>
+            </div>
+            <a href="#" class="inline-block bg-blue-600 hover:bg-pink-500 text-white font-bold text-base px-7 py-3.5 rounded-full transition-all hover:-translate-y-0.5">Сделать конспект своего видео →</a>
+        </footer>
+
+        <!-- Скрипты для логики -->
+        <script>
+            document.addEventListener('click', function (e) {
+                // Открытие/закрытие секций
+                const header = e.target.closest('.section-header');
+                if (header) {
+                    header.closest('.section').classList.toggle('collapsed');
+                }
+
+                // Клик по чек-листу
+                const chkItem = e.target.closest('.chk-item');
+                if (chkItem) {
+                    chkItem.classList.toggle('checked');
+                    updateProgress();
+                    saveState();
+                }
+            });
+
+            function updateProgress() {
+                const items = document.querySelectorAll('.chk-item');
+                const done = document.querySelectorAll('.chk-item.checked').length;
+                if (items.length) {
+                    document.querySelector('.chk-progress-fill').style.width = Math.round((done / items.length) * 100) + '%';
+                    document.querySelector('.chk-progress-label').textContent = done + ' из ' + items.length;
+                }
+            }
+
+            function saveState() {
+                const checked = Array.from(document.querySelectorAll('.chk-item'))
+                    .map((item, i) => item.classList.contains('checked') ? i : null)
+                    .filter(i => i !== null);
+                localStorage.setItem('studio-checklist', JSON.stringify(checked));
+            }
+
+            // Загрузка при открытии
+            const saved = JSON.parse(localStorage.getItem('studio-checklist') || '[]');
+            document.querySelectorAll('.chk-item').forEach((item, i) => {
+                if (saved.includes(i)) item.classList.add('checked');
+            });
+            updateProgress();
+        </script>
 
     </div>
 </body>
