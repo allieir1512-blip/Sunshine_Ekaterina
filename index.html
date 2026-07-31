@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="favicon.png">
-    <title>Интерактивный конспект: Операционная встреча студии</title>
-    <!-- Подключаем Tailwind CSS через CDN -->
+    <title>Оперативная встреча студии: регламенты, процессы и задачи</title>
+    <!-- Tailwind CSS через CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,162 +14,364 @@
         body { font-family: 'Roboto', sans-serif; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-700 py-8 px-4">
-    <div class="max-w-3xl mx-auto">
+<body class="bg-slate-100 text-gray-700 py-8 px-4 md:px-8">
+    <div class="max-w-4xl mx-auto space-y-6">
         
-        <!-- Шапка / Hero-секция -->
-        <header class="bg-white rounded-2xl p-8 md:p-10 mb-8 shadow-sm border-t-4 border-blue-600 text-center">
-            <div class="text-sky-500 uppercase text-xs font-bold tracking-widest mb-3">Интерактивный конспект встречи[cite: 2]</div>
-            <h1 class="text-2xl md:text-3xl text-gray-900 font-bold mb-4 leading-tight">Операционные вопросы и развитие продукта студии[cite: 2]</h1>
-            <div class="text-base md:text-lg text-gray-600 mb-6">Регулярная встреча администраторов: оптимизация записей, регламенты и внедрение ИИ[cite: 2]</div>
-            <div class="flex justify-center gap-2 flex-wrap">
-                <span class="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-xs font-medium">#Операционка[cite: 2]</span>
-                <span class="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-xs font-medium">#Администраторы[cite: 2]</span>
-                <span class="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-xs font-medium">#Процессы[cite: 2]</span>
-                <span class="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-xs font-medium">#Автоматизация[cite: 2]</span>
+        <!-- HEADER / HERO SECTION -->
+        <header class="bg-white rounded-2xl p-6 md:p-10 shadow-sm border-t-4 border-blue-600">
+            <div class="flex flex-wrap justify-between items-center gap-2 mb-4 text-sm text-gray-500">
+                <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full font-medium">Регулярная встреча</span>
+                <span>📅 Пятница, 12:00</span>
+                <span>👥 Участники: Администраторы студии</span>
+            </div>
+            <h1 class="text-2xl md:text-3xl text-gray-900 font-bold mb-3 leading-tight">
+                Встреча по операционным вопросам и развитию продукта
+            </h1>
+            <p class="text-gray-600 text-base md:text-lg mb-6">
+                Полный рабочий конспект: оптимизация системы записи, работа с «замочками», юридическая безопасность, летнее расписание, межфилиальное взаимодействие и внедрение ИИ.
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs font-medium">
+                <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-md">#Операционка</span>
+                <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-md">#Регламенты</span>
+                <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-md">#ДетскиеГруппы</span>
+                <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-md">#YouGile</span>
+                <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-md">#AI_Помощник</span>
             </div>
         </header>
 
-        <!-- Секция 1: Суть за 30 секунд -->
-        <section class="section group bg-white rounded-2xl mb-5 shadow-sm overflow-hidden border border-gray-100">
-            <div class="section-header p-6 flex items-center cursor-pointer border-b border-transparent select-none">
-                <div class="w-11 h-11 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl mr-4 shrink-0">⚡</div>
-                <h2 class="text-xl font-bold text-gray-900 flex-1 m-0">Суть за 30 секунд</h2>
-                <div class="section-toggle w-6 h-6 flex items-center justify-center text-gray-400 transition-transform duration-300 shrink-0">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                </div>
-            </div>
-            <div class="section-content px-6 pb-8 text-gray-600 text-base transition-all duration-300">
-                <ul class="list-disc pl-6 space-y-2">
-                    <li><strong class="text-gray-900">Оптимизация записей и детских групп:</strong> Очистка «замочков», обязательная предварительная запись через приложение или чат с подтверждением «плюсиком»[cite: 2].</li>
-                    <li><strong class="text-gray-900">Регламентация процессов:</strong> Четкое разграничение ответственности между филиалами, сбор согласий и стандартизация переписок[cite: 2].</li>
-                    <li><strong class="text-gray-900">Автоматизация и цифровизация:</strong> Внедрение ИИ-помощника для ответов клиентам и организация рабочего пространства в YouGile[cite: 2].</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Секция 2: Главное о встрече и ключевые решения -->
-        <section class="section group bg-white rounded-2xl mb-5 shadow-sm overflow-hidden border border-gray-100">
-            <div class="section-header p-6 flex items-center cursor-pointer border-b border-transparent select-none">
-                <div class="w-11 h-11 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl mr-4 shrink-0">📌</div>
-                <h2 class="text-xl font-bold text-gray-900 flex-1 m-0">Главное о встрече и ключевые решения</h2>
-                <div class="section-toggle w-6 h-6 flex items-center justify-center text-gray-400 transition-transform duration-300 shrink-0">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                </div>
-            </div>
-            <div class="section-content px-6 pb-8 text-gray-600 text-base transition-all duration-300">
-                <p class="mb-4">На регулярной встрече администраторов обсуждались операционные улучшения, включая оптимизацию записи клиентов, работу с документацией, летнее расписание и взаимодействие между филиалами[cite: 2].</p>
-                <div class="bg-blue-50/60 p-6 rounded-xl border-l-4 border-blue-600 space-y-3">
-                    <h4 class="text-gray-900 font-bold mb-2 flex items-center gap-2">💎 Основные решения</h4>
-                    <p class="m-0"><strong>Регулярность:</strong> Еженедельные встречи закреплены на пятницу в 12:00[cite: 2].</p>
-                    <p class="m-0"><strong>Детские группы:</strong> Полная очистка от старых записей («замочков»)[cite: 2].</p>
-                    <p class="m-0"><strong>Филиалы:</strong> Четкое разграничение ответственности за переписку и ведение клиентов[cite: 2].</p>
-                    <p class="m-0"><strong>Летнее расписание:</strong> Отмена гамаков по субботам в 14:00 и танцев 7+, танцевальный клуб перенесен только в ЖК Екатерина[cite: 2].</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Секция 3: Требования, пробные занятия и безопасность -->
-        <section class="section group bg-white rounded-2xl mb-5 shadow-sm overflow-hidden border border-gray-100">
-            <div class="section-header p-6 flex items-center cursor-pointer border-b border-transparent select-none">
-                <div class="w-11 h-11 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl mr-4 shrink-0">🛡️</div>
-                <h2 class="text-xl font-bold text-gray-900 flex-1 m-0">Требования, пробные занятия и безопасность</h2>
-                <div class="section-toggle w-6 h-6 flex items-center justify-center text-gray-400 transition-transform duration-300 shrink-0">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                </div>
-            </div>
-            <div class="section-content px-6 pb-8 text-gray-600 text-base transition-all duration-300">
-                <p class="mb-4">На встрече были детально проработаны стандарты безопасности на тренировках, правила использования пробных занятий и сбор необходимой документации[cite: 2].</p>
-                <div class="bg-blue-50/60 p-6 rounded-xl border-l-4 border-blue-600 space-y-3">
-                    <h4 class="text-gray-900 font-bold mb-2 flex items-center gap-2">💎 Ключевые регламенты</h4>
-                    <p class="m-0"><strong>Обувь на Body Sculpt:</strong> Обязательное использование кроссовок для предотвращения травм и обеспечения безопасности[cite: 2].</p>
-                    <p class="m-0"><strong>Пробные занятия:</strong> Доступны один раз по каждому направлению; перерыв в посещении студии на один год полностью обнуляет историю клиента[cite: 2].</p>
-                    <p class="m-0"><strong>Согласия и справки:</strong> Обязательный сбор согласий на обработку данных, фото/видеосъемку и медицинских справок для детей для юридической защиты студии и учета противопоказаний[cite: 2].</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Секция 4: Управление замочками и филиалы -->
-        <section class="section group bg-white rounded-2xl mb-5 shadow-sm overflow-hidden border border-gray-100">
-            <div class="section-header p-6 flex items-center cursor-pointer border-b border-transparent select-none">
-                <div class="w-11 h-11 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl mr-4 shrink-0">🔄</div>
-                <h2 class="text-xl font-bold text-gray-900 flex-1 m-0">Управление «замочками» и филиалы</h2>
-                <div class="section-toggle w-6 h-6 flex items-center justify-center text-gray-400 transition-transform duration-300 shrink-0">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                </div>
-            </div>
-            <div class="section-content px-6 pb-8 text-gray-600 text-base transition-all duration-300">
-                <p class="mb-4">Для оптимизации заполняемости групп и исключения путаницы внедрены строгие регламенты работы с отсутствующими клиентами и коммуникации между филиалами[cite: 2].</p>
-                <div class="bg-blue-50/60 p-6 rounded-xl border-l-4 border-blue-600 space-y-3">
-                    <h4 class="text-gray-900 font-bold mb-2 flex items-center gap-2">💎 Регламенты работы</h4>
-                    <p class="m-0"><strong>Управление «замочками»:</strong> При длительном отсутствии клиента (отпуск, больничный) необходимо снимать «замочек» и ставить задачу на возврат после его возвращения[cite: 2].</p>
-                    <p class="m-0"><strong>Взаимодействие филиалов:</strong> Четкое разграничение ответственности за клиентов и переписку между филиалами для избежания ошибок и перегрузки администраторов[cite: 2].</p>
-                    <p class="m-0"><strong>Передача клиентов:</strong> Филиал, начавший переписку, передает клиента другому филиалу, после чего тот полностью переходит под ответственность принимающей стороны[cite: 2].</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Секция 5: План действий и задачи -->
-        <section class="section group bg-white rounded-2xl mb-5 shadow-sm overflow-hidden border border-gray-100">
-            <div class="section-header p-6 flex items-center cursor-pointer border-b border-transparent select-none">
-                <div class="w-11 h-11 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl mr-4 shrink-0">📋</div>
-                <h2 class="text-xl font-bold text-gray-900 flex-1 m-0">План действий и задачи</h2>
-                <div class="section-toggle w-6 h-6 flex items-center justify-center text-gray-400 transition-transform duration-300 shrink-0">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                </div>
-            </div>
-            <div class="section-content px-6 pb-8 text-gray-600 text-base transition-all duration-300">
-                <div class="space-y-4">
-                    <div class="p-4 bg-gray-50 rounded-xl border border-gray-100">
-                        <div class="font-bold text-gray-900 mb-1">Уточнить период для повторного пробного занятия</div>
-                        <div class="text-sm text-gray-500">Ответственный: Александра | Дедлайн: 3.08[cite: 2]</div>
-                    </div>
-                    <div class="p-4 bg-gray-50 rounded-xl border border-gray-100">
-                        <div class="font-bold text-gray-900 mb-1">Очистить все детские группы от «замочков» и внедрить запись через «+»</div>
-                        <div class="text-sm text-gray-500">Ответственный: Администраторы | Дедлайн: Как можно скорее[cite: 2]</div>
-                    </div>
-                    <div class="p-4 bg-gray-50 rounded-xl border border-gray-100">
-                        <div class="font-bold text-gray-900 mb-1">Разработать AI-помощника и настроить пространство в YouGile</div>
-                        <div class="text-sm text-gray-500">Ответственный: Александра | Дедлайн: 7.08[cite: 2]</div>
-                    </div>
-                    <div class="p-4 bg-gray-50 rounded-xl border border-gray-100">
-                        <div class="font-bold text-gray-900 mb-1">Передать Нике опыт составления графика работы и заказа расходников Ксении</div>
-                        <div class="text-sm text-gray-500">Ответственный: Ника | Дедлайн: До ухода в отпуск[cite: 2]</div>
+        <!-- СЕКЦИЯ 1: ГЛАВНОЕ О ВСТРЕЧЕ И КЛЮЧЕВЫЕ РЕШЕНИЯ -->
+        <section class="section bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+            <div class="section-header p-6 flex items-center justify-between cursor-pointer select-none bg-white hover:bg-slate-50 transition-colors">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-bold text-lg">📌</div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900">Главное о встрече и ключевые решения</h2>
+                        <p class="text-xs text-gray-500">Краткое резюме и основные фиксированные договоренности</p>
                     </div>
                 </div>
+                <span class="toggle-icon text-gray-400 text-xl transition-transform duration-300">▼</span>
+            </div>
+            <div class="section-content px-6 pb-6 pt-2 space-y-4 text-gray-600 border-t border-gray-100">
+                <p>
+                    На встрече обсуждались операционные улучшения, включая оптимизацию записи клиентов, работу с документацией и взаимодействие между филиалами, а также внедрение ИИ-помощника для повышения эффективности общения с клиентами.
+                </p>
+                <div class="bg-blue-50/70 p-5 rounded-xl border-l-4 border-blue-600 space-y-2">
+                    <h3 class="font-bold text-gray-900 mb-2">Ключевые решения:</h3>
+                    <ul class="list-disc pl-5 space-y-1 text-sm md:text-base">
+                        <li><strong>График встреч:</strong> Установлен фиксированный день и время для еженедельных встреч: пятница, 12:00.</li>
+                        <li><strong>Очистка групп:</strong> Принято решение о полной очистке детских групп от старых записей («замочков») для корректного учёта посещаемости.</li>
+                        <li><strong>Алгоритм «замочков»:</strong> Внедряется новый алгоритм работы с клиентами, закрепленными «замочками», с обязательным снятием закрепления на время отсутствия клиента и постановкой задачи на возврат.</li>
+                        <li><strong>Ответственность филиалов:</strong> Уточнена ответственность за подтверждение записей и ведение переписки с клиентами между филиалами: каждый филиал отвечает за своих клиентов после передачи.</li>
+                        <li><strong>Передача задач:</strong> Задачи по составлению графика на сентябрь и заказу расходников передаются Ксении (Ксюше) в связи с отпуском Ники.</li>
+                        <li><strong>Изменения в расписании:</strong> Гамаки по субботам в 14:00 и танцы 7+ отменены на летний период из-за низкой набираемости.</li>
+                        <li><strong>Танцевальный клуб:</strong> Проводится только в ЖК, в Металлострое его не будет.</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <!-- Подвал -->
-        <footer class="text-center text-gray-400 text-sm mt-12 mb-6">
-            Интерактивный конспект подготовлен для команды студии[cite: 2]
+        <!-- СЕКЦИЯ 2: ПОДРОБНЫЙ РАЗБОР ТЕМ И ТЕХНИЧЕСКИЕ ПАРАМЕТРЫ -->
+        <section class="section bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+            <div class="section-header p-6 flex items-center justify-between cursor-pointer select-none bg-white hover:bg-slate-50 transition-colors">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center font-bold text-lg">🔍</div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900">Подробный разбор тем (15 направлений)</h2>
+                        <p class="text-xs text-gray-500">Логика, технические лимиты, алгоритмы действий и инсайты</p>
+                    </div>
+                </div>
+                <span class="toggle-icon text-gray-400 text-xl transition-transform duration-300">▼</span>
+            </div>
+            <div class="section-content px-6 pb-6 pt-4 space-y-6 border-t border-gray-100">
+                
+                <!-- Тема 1 -->
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-gray-900 text-lg mb-1">1. Требования к обуви на занятиях</h3>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Суть и логика:</strong> Необходимость использования кроссовок на занятиях Body Sculpt для безопасности клиентов.</p>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Технические детали:</strong> Обязательно информировать клиентов о требовании к кроссовкам для Body Sculpt.</p>
+                    <div class="text-xs font-semibold text-indigo-700 bg-indigo-50 p-2 rounded">💡 Инсайт: Предотвращение травм и обеспечение безопасности клиентов.</div>
+                </div>
+
+                <!-- Тема 2 -->
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-gray-900 text-lg mb-1">2. Пробные занятия и их обновление</h3>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Суть и логика:</strong> Порядок посещения пробных занятий и условия их повторного использования.</p>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Технические детали:</strong> Пробные занятия можно посетить один раз по каждому направлению. Перерыв в посещении студии на год обнуляет историю (клиент считается новым). Вопрос о полугодовом перерыве требует уточнения.</p>
+                    <div class="text-xs font-semibold text-indigo-700 bg-indigo-50 p-2 rounded">💡 Инсайт: Четкое регулирование пробных занятий для избежания злоупотреблений и увеличения конверсии.</div>
+                </div>
+
+                <!-- Тема 3 -->
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-gray-900 text-lg mb-1">3. Детские группы и система записи</h3>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Суть и логика:</strong> Проблемы с некорректными записями в детских группах и предложение по их очистке и унификации процесса записи на летний период.</p>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Технические детали:</strong> Полная очистка всех детских групп от «замочков». Установить правило обязательной предварительной записи через приложение или через чат (поставить «+»).</p>
+                    <div class="text-xs font-semibold text-indigo-700 bg-indigo-50 p-2 rounded">💡 Инсайт: Улучшение учета посещаемости, снижение вопросов от тренеров по зарплате, уменьшение «потерянных» клиентов.</div>
+                </div>
+
+                <!-- Тема 4 -->
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-gray-900 text-lg mb-1">4. Согласия на обработку ПДН, фото/видеосъемку и детские справки</h3>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Суть и логика:</strong> Важность сбора согласий для юридической безопасности и комфортной работы. Процедура получения согласий с новых и старых клиентов.</p>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Технические детали:</strong> Согласия собираются со всех новых клиентов. Для старых — под предлогом обновления политики обработки данных. Фиксировать согласие/несогласие на фото/видео и противопоказания в карточке клиента. Старые согласия хранить в архиве 5 лет. Это же касается сбора детских справок (обязательно, т.к. родители не всегда информируют о заболеваниях ребенком).</p>
+                    <div class="text-xs font-semibold text-indigo-700 bg-indigo-50 p-2 rounded">💡 Инсайт: Юридическая защита студии, улучшение информирования тренеров о противопоказаниях клиентов.</div>
+                </div>
+
+                <!-- Тема 5 -->
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-gray-900 text-lg mb-1">5. Договоры для возмещения стоимости абонемента на работе</h3>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Суть и логика:</strong> Проблемы с некорректным указанием адреса студии в договоре.</p>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Технические детали:</strong> Необходимо получить уточнение от Виктории и Александра по правильному адресу (три адреса или только Заводская). Перепечатать договоры для работы.</p>
+                    <div class="text-xs font-semibold text-indigo-700 bg-indigo-50 p-2 rounded">💡 Инсайт: Актуализация юридических документов.</div>
+                </div>
+
+                <!-- Тема 6 -->
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-gray-900 text-lg mb-1">6. Управление «замочками» и лояльность клиентов</h3>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Суть и логика:</strong> Необходимость корректного управления закрепленными клиентами при их отсутствии (отпуск, больничный) для освобождения мест и проявления лояльности.</p>
+                    <p class="text-sm text-gray-600 mb-3"><strong>Пошаговый алгоритм действий:</strong></p>
+                    <ol class="list-decimal pl-5 text-sm text-gray-700 space-y-1 mb-3 bg-white p-3 rounded border border-gray-200">
+                        <li>Клиент сообщил об отпуск/больничном.</li>
+                        <li>Поставили заморозку абонемента.</li>
+                        <li>Написали комментарий в заметках карточки.</li>
+                        <li>Поставили задачу с напоминанием о себе после его отпуска.</li>
+                        <li>Проверили, не закреплен ли он за какой-либо группой — открепили.</li>
+                        <li>Поставили задачу закрепить обратно после возвращения клиента.</li>
+                    </ol>
+                    <div class="text-xs font-semibold text-indigo-700 bg-indigo-50 p-2 rounded">💡 Инсайт: Оптимизация заполняемости групп, поддержание лояльности клиентов, предотвращение недовольства тренеров.</div>
+                </div>
+
+                <!-- Тема 7 -->
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-gray-900 text-lg mb-1">7. Взаимодействие с филиалом Металлострой</h3>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Суть и логика:</strong> Разграничение ответственности за клиентов и переписку между филиалами для избежания путаницы и перегрузки администраторов.</p>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Технические детали:</strong> Любой филиал, начавший переписку, передает клиента другому филиалу, если его запрос относится к другому филиалу. После передачи клиент полностью переходит под ответственность принимающего филиала.</p>
+                    <div class="text-xs font-semibold text-indigo-700 bg-indigo-50 p-2 rounded">💡 Инсайт: Улучшение организации работы, предотвращение ошибок, снижение нагрузки на администраторов.</div>
+                </div>
+
+                <!-- Тема 8 -->
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-gray-900 text-lg mb-1">8. Статистика сообществ ВКонтакте и завершение диалогов</h3>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Суть и логика:</strong> Проблема с брошенными и непрочитанными сообщениями, влияющая на статистику ВК и понимание ситуации новыми администраторами.</p>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Технические детали:</strong> При решении вопроса по телефону обязательно завершать диалог в мессенджере (писать «Вопрос решен по телефону»). В выходные использовать шаблон с указанием сроков ответа и информировать ответственного в рабочих чатах.</p>
+                    <div class="text-xs font-semibold text-indigo-700 bg-indigo-50 p-2 rounded">💡 Инсайт: Поддержание высокой скорости ответа в соцсетях, улучшение коммуникации, избежание потери клиентов.</div>
+                </div>
+
+                <!-- Тема 9 -->
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-gray-900 text-lg mb-1">9. Расписание летних групп</h3>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Суть и логика:</strong> Уточнение и фиксация изменений в летнем расписании.</p>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Технические детали:</strong> Гамаки по субботам в 14:00 и танцы 7+ отменены на лето. Танцевальный клуб только в ЖК Екатерина.</p>
+                    <div class="text-xs font-semibold text-indigo-700 bg-indigo-50 p-2 rounded">💡 Инсайт: Оптимизация расписания под летнюю посещаемость.</div>
+                </div>
+
+                <!-- Тема 10 -->
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-gray-900 text-lg mb-1">10. Отчеты по отказам от покупки абонементов</h3>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Суть и логика:</strong> Необходимость детализированной фиксации причин отказа клиентов от покупки абонементов после пробных занятий.</p>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Технические детали:</strong> Подробно фиксировать причины отказа в комментариях к карточке клиента и дублировать информацию в отчете план/факт за день.</p>
+                    <div class="text-xs font-semibold text-indigo-700 bg-indigo-50 p-2 rounded">💡 Инсайт: Сбор данных для анализа и улучшения предложения.</div>
+                </div>
+
+                <!-- Тема 11 -->
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-gray-900 text-lg mb-1">11. Расчет зарплаты</h3>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Суть и логика:</strong> Корректная процедура расчета зарплаты с учетом периодов.</p>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Технические детали:</strong> Строго указывать даты периода (с 1 по 15 и с 16 по 31 число каждого месяца). При запросе выплаты в конце месяца — формировать две ведомости.</p>
+                    <div class="text-xs font-semibold text-indigo-700 bg-indigo-50 p-2 rounded">💡 Инсайт: Корректный финансовый учет.</div>
+                </div>
+
+                <!-- Тема 12 -->
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-gray-900 text-lg mb-1">12. Эффективность переписок и AI-помощник</h3>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Суть и логика:</strong> Принципы мышления при ведении переписки (цель диалога, инициатива, последовательность вопросов) и использование ИИ для ускорения работы.</p>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Технические детали:</strong> Использование ИИ (чат-бот) для формирования ответов, адаптация под стиль студии. Зафиксировать моменты сложностей для разбора. Использовать DeepSeek или личный ChatGPT.</p>
+                    <div class="text-xs font-semibold text-indigo-700 bg-indigo-50 p-2 rounded">💡 Инсайт: Повышение эффективности и качества ответов, снижение нагрузки на администраторов, стандартизация коммуникации.</div>
+                </div>
+
+                <!-- Тема 13 -->
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-gray-900 text-lg mb-1">13. Организация рабочего онлайн-пространства в YouGile</h3>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Суть и логика:</strong> Создание единого, удобного рабочего пространства для администраторов, включающего чаты, задачи и базу знаний, без необходимости VPN.</p>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Технические детали:</strong> Включает чаты с уведомлениями и закрепами, таск-трекер, базу знаний (правила студии, скрипты, договоры). Должно быть легко устанавливаемым на телефон и ПК.</p>
+                    <div class="text-xs font-semibold text-indigo-700 bg-indigo-50 p-2 rounded">💡 Инсайт: Улучшение организации работы, доступность информации, снижение времени на поиск данных.</div>
+                </div>
+
+                <!-- Тема 14 -->
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-gray-900 text-lg mb-1">14. Составление графика работы</h3>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Суть и логика:</strong> Передача ответственности за составление графика Ксюше в связи с отпуском Ники.</p>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Технические детали:</strong> Ксения берет на себя составление графика на сентябрь. Нике передать опыт.</p>
+                    <div class="text-xs font-semibold text-indigo-700 bg-indigo-50 p-2 rounded">💡 Инсайт: Обеспечение непрерывности процесса составления графика.</div>
+                </div>
+
+                <!-- Тема 15 -->
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-gray-900 text-lg mb-1">15. Уведомления в чате</h3>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Суть и логика:</strong> Необходимость подтверждения прочтения сообщений в чате.</p>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Технические детали:</strong> Реагировать на сообщения (ставить реакции) или писать «принято» для подтверждения прочтения.</p>
+                    <div class="text-xs font-semibold text-indigo-700 bg-indigo-50 p-2 rounded">💡 Инсайт: Улучшение коммуникации в команде, уверенность в доставке информации.</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- СЕКЦИЯ 3: ПЛАН ДЕЙСТВИЙ И ЗАДАЧИ -->
+        <section class="section bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+            <div class="section-header p-6 flex items-center justify-between cursor-pointer select-none bg-white hover:bg-slate-50 transition-colors">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center font-bold text-lg">✅</div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900">План действий и задачи (10 задач)</h2>
+                        <p class="text-xs text-gray-500">Ответственные, дедлайны и контекст выполнения</p>
+                    </div>
+                </div>
+                <span class="toggle-icon text-gray-400 text-xl transition-transform duration-300">▼</span>
+            </div>
+            <div class="section-content px-6 pb-6 pt-4 border-t border-gray-100">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    
+                    <div class="p-4 bg-emerald-50/50 rounded-xl border border-emerald-200 flex flex-col justify-between">
+                        <p class="font-bold text-gray-900 text-sm mb-2">1. Уточнить у Виктории и Александра период отсутствия клиента для повторного пробного занятия</p>
+                        <div class="text-xs text-emerald-800 font-medium">👤 Александра | 📅 Дедлайн: 3.08</div>
+                    </div>
+
+                    <div class="p-4 bg-emerald-50/50 rounded-xl border border-emerald-200 flex flex-col justify-between">
+                        <p class="font-bold text-gray-900 text-sm mb-2">2. Очистить все детские группы от «замочков»</p>
+                        <div class="text-xs text-emerald-800 font-medium">👤 Администраторы | 📅 Дедлайн: Как можно скорее</div>
+                    </div>
+
+                    <div class="p-4 bg-emerald-50/50 rounded-xl border border-emerald-200 flex flex-col justify-between">
+                        <p class="font-bold text-gray-900 text-sm mb-2">3. Составить и отправить в чат родителям сообщение об обязательной предварительной записи на детские занятия (приложение или «+»)</p>
+                        <div class="text-xs text-emerald-800 font-medium">👤 Администраторы | 📅 Дедлайн: Как можно скорее</div>
+                    </div>
+
+                    <div class="p-4 bg-emerald-50/50 rounded-xl border border-emerald-200 flex flex-col justify-between">
+                        <p class="font-bold text-gray-900 text-sm mb-2">4. Уточнить у Виктории и Александра правильное оформление договоров с сотрудниками (3 адреса или только Заводская)</p>
+                        <div class="text-xs text-emerald-800 font-medium">👤 Александра | 📅 Дедлайн: 3.08</div>
+                    </div>
+
+                    <div class="p-4 bg-emerald-50/50 rounded-xl border border-emerald-200 flex flex-col justify-between">
+                        <p class="font-bold text-gray-900 text-sm mb-2">5. Перепечатать договоры для работы с корректным адресом</p>
+                        <div class="text-xs text-emerald-800 font-medium">👤 Администраторы | 📅 Дедлайн: После уточнений</div>
+                    </div>
+
+                    <div class="p-4 bg-emerald-50/50 rounded-xl border border-emerald-200 flex flex-col justify-between">
+                        <p class="font-bold text-gray-900 text-sm mb-2">6. Разработать и внедрить алгоритм работы с клиентами, закрепленными «замочками»</p>
+                        <div class="text-xs text-emerald-800 font-medium">👤 Администраторы | 📅 Дедлайн: Как можно скорее</div>
+                    </div>
+
+                    <div class="p-4 bg-emerald-50/50 rounded-xl border border-emerald-200 flex flex-col justify-between">
+                        <p class="font-bold text-gray-900 text-sm mb-2">7. Составить сообщение для клиентов гамаков о летнем расписании (объединение в 13:00, отмена 14:00)</p>
+                        <div class="text-xs text-emerald-800 font-medium">👤 Ксения | 📅 Дедлайн: Сегодня (31.07)</div>
+                    </div>
+
+                    <div class="p-4 bg-emerald-50/50 rounded-xl border border-emerald-200 flex flex-col justify-between">
+                        <p class="font-bold text-gray-900 text-sm mb-2">8. Разработать AI-помощника для ответов на сообщения клиентов в стиле студии</p>
+                        <div class="text-xs text-emerald-800 font-medium">👤 Александра | 📅 Дедлайн: 7.08</div>
+                    </div>
+
+                    <div class="p-4 bg-emerald-50/50 rounded-xl border border-emerald-200 flex flex-col justify-between">
+                        <p class="font-bold text-gray-900 text-sm mb-2">9. Организовать рабочее онлайн-пространство в YouGile (чаты, задачи, база знаний) без VPN</p>
+                        <div class="text-xs text-emerald-800 font-medium">👤 Александра | 📅 Дедлайн: 7.08</div>
+                    </div>
+
+                    <div class="p-4 bg-emerald-50/50 rounded-xl border border-emerald-200 flex flex-col justify-between">
+                        <p class="font-bold text-gray-900 text-sm mb-2">10. Передать Ксении опыт составления графика работы и заказа расходников</p>
+                        <div class="text-xs text-emerald-800 font-medium">👤 Ника | 📅 Дедлайн: До ухода в отпуск</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- СЕКЦИЯ 4: РИСКИ И СТРАТЕГИИ НЕЙТРАЛИЗАЦИИ -->
+        <section class="section bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+            <div class="section-header p-6 flex items-center justify-between cursor-pointer select-none bg-white hover:bg-slate-50 transition-colors">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center font-bold text-lg">⚠️</div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900">Риски, препятствия и нейтрализация (8 рисков)</h2>
+                        <p class="text-xs text-gray-500">Возможные проблемы и утвержденные шаги по предотвращению</p>
+                    </div>
+                </div>
+                <span class="toggle-icon text-gray-400 text-xl transition-transform duration-300">▼</span>
+            </div>
+            <div class="section-content px-6 pb-6 pt-4 space-y-4 border-t border-gray-100">
+                
+                <div class="p-4 bg-amber-50/50 rounded-xl border border-amber-200 space-y-1">
+                    <h3 class="font-bold text-amber-900 text-sm">1. Некорректные записи клиентов в детских группах</h3>
+                    <p class="text-xs text-gray-600"><strong>Риск:</strong> Путаница с посещаемостью, вопросы от тренеров по зарплате, потеря клиентов из-за непонимания системы записи.</p>
+                    <p class="text-xs text-amber-900 font-medium"><strong>Стратегия нейтрализации:</strong> Полная очистка групп от «замочков», внедрение обязательной предварительной записи через приложение или «+».</p>
+                </div>
+
+                <div class="p-4 bg-amber-50/50 rounded-xl border border-amber-200 space-y-1">
+                    <h3 class="font-bold text-amber-900 text-sm">2. Юридические риски из-за отсутствия согласий</h3>
+                    <p class="text-xs text-gray-600"><strong>Риск:</strong> Возможные претензии от клиентов по фото/видеосъемке или отсутствию данных о противопоказаниях.</p>
+                    <p class="text-xs text-amber-900 font-medium"><strong>Стратегия нейтрализации:</strong> Активный сбор согласий со всех клиентов, обязательная фиксация информации в карточках.</p>
+                </div>
+
+                <div class="p-4 bg-amber-50/50 rounded-xl border border-amber-200 space-y-1">
+                    <h3 class="font-bold text-amber-900 text-sm">3. Неэффективное взаимодействие с филиалом Металлострой</h3>
+                    <p class="text-xs text-gray-600"><strong>Риск:</strong> Путаница с ответственностью за клиентов, перегрузка администраторов, потеря клиентов.</p>
+                    <p class="text-xs text-amber-900 font-medium"><strong>Стратегия нейтрализации:</strong> Четкое разграничение ответственности: после передачи клиента за него полностью отвечает принимающий филиал.</p>
+                </div>
+
+                <div class="p-4 bg-amber-50/50 rounded-xl border border-amber-200 space-y-1">
+                    <h3 class="font-bold text-amber-900 text-sm">4. Брошенные/непрочитанные сообщения в соцсетях</h3>
+                    <p class="text-xs text-gray-600"><strong>Риск:</strong> Снижение рейтинга сообщества ВК, негативное впечатление у клиентов, потеря обращений.</p>
+                    <p class="text-xs text-amber-900 font-medium"><strong>Стратегия нейтрализации:</strong> Обязательное завершение диалогов с указанием, где решен вопрос. Использование автоответов в выходные.</p>
+                </div>
+
+                <div class="p-4 bg-amber-50/50 rounded-xl border border-amber-200 space-y-1">
+                    <h3 class="font-bold text-amber-900 text-sm">5. Сложности с расчетом зарплаты</h3>
+                    <p class="text-xs text-gray-600"><strong>Риск:</strong> Несоответствия и ошибки в финансовом учете.</p>
+                    <p class="text-xs text-amber-900 font-medium"><strong>Стратегия нейтрализации:</strong> Строгое соблюдение периодов при расчете зарплаты, формирование двух ведомостей при запросе полной выплаты в конце месяца.</p>
+                </div>
+
+                <div class="p-4 bg-amber-50/50 rounded-xl border border-amber-200 space-y-1">
+                    <h3 class="font-bold text-amber-900 text-sm">6. Неэффективная коммуникация с клиентами в переписках</h3>
+                    <p class="text-xs text-gray-600"><strong>Риск:</strong> Потеря клиентов, низкая конверсия после обращений.</p>
+                    <p class="text-xs text-amber-900 font-medium"><strong>Стратегия нейтрализации:</strong> Внедрение принципов целенаправленной переписки, использование ИИ-помощника для ускорения и стандартизации ответов.</p>
+                </div>
+
+                <div class="p-4 bg-amber-50/50 rounded-xl border border-amber-200 space-y-1">
+                    <h3 class="font-bold text-amber-900 text-sm">7. Разрозненность рабочей информации</h3>
+                    <p class="text-xs text-gray-600"><strong>Риск:</strong> Трата времени на поиск документов, инструкций, задач, снижение эффективности работы.</p>
+                    <p class="text-xs text-amber-900 font-medium"><strong>Стратегия нейтрализации:</strong> Создание единого онлайн-пространства YouGile с чатами, таск-трекером и базой знаний.</p>
+                </div>
+
+                <div class="p-4 bg-amber-50/50 rounded-xl border border-amber-200 space-y-1">
+                    <h3 class="font-bold text-amber-900 text-sm">8. Проблемы с графиком и расходниками во время отпуска Ники</h3>
+                    <p class="text-xs text-gray-600"><strong>Риск:</strong> Перебои в работе студии, отсутствие необходимых материалов.</p>
+                    <p class="text-xs text-amber-900 font-medium"><strong>Стратегия нейтрализации:</strong> Передача ответственности Ксении, проведение обучения и предоставление всей информации до отпуска.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="text-center text-xs text-gray-400 py-6">
+            Интерактивный конспект встречи администраторов студии • База знаний
         </footer>
 
     </div>
 
-    <!-- Интерактивный скрипт для сворачивания/разворачивания блоков -->
+    <!-- SCRIPT FOR ACCORDION INTERACTIVITY -->
     <script>
         document.querySelectorAll('.section-header').forEach(header => {
             header.addEventListener('click', () => {
                 const section = header.parentElement;
                 const content = section.querySelector('.section-content');
-                const toggleIcon = header.querySelector('.section-toggle');
-                
-                if (section.classList.contains('collapsed')) {
-                    section.classList.remove('collapsed');
-                    content.style.maxHeight = content.scrollHeight + "px";
-                    toggleIcon.style.transform = "rotate(0deg)";
+                const icon = header.querySelector('.toggle-icon');
+
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    icon.style.transform = 'rotate(0deg)';
                 } else {
-                    section.classList.add('collapsed');
-                    content.style.maxHeight = "0px";
-                    toggleIcon.style.transform = "rotate(-90deg)";
+                    content.classList.add('hidden');
+                    icon.style.transform = 'rotate(-90deg)';
                 }
             });
-        });
-
-        // Установка начальной высоты для плавной анимации
-        document.querySelectorAll('.section-content').forEach(content => {
-            content.style.maxHeight = content.scrollHeight + "px";
         });
     </script>
 </body>
