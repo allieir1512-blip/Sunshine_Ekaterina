@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Организация работы студии: управление записями, коммуникация и внутренние процессы</title>
     <link rel="icon" type="image/png" href="favicon.png">
+    <title>Организация работы студии: управление записями, коммуникация и внутренние процессы</title>
     <!-- Подключаем Tailwind CSS через CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
 <body class="bg-gray-50 text-gray-500 py-8 px-4">
     <div class="max-w-3xl mx-auto">
         
-        <!-- Блок 1: Шапка -->
+        <!-- Шапка -->
         <header class="bg-white rounded-2xl p-8 md:p-10 mb-8 shadow-sm border-t-4 border-blue-600 text-center">
             <div class="text-sky-400 uppercase text-xs font-bold tracking-widest mb-3">Интерактивный конспект</div>
             <h1 class="text-2xl md:text-3xl text-gray-900 font-bold mb-4 leading-tight">Организация работы студии: управление записями, коммуникация и внутренние процессы</h1>
@@ -31,8 +31,6 @@
             </div>
         </header>
 
-        <!-- Блок 2: Секции конспекта -->
-        
         <!-- Секция 1 -->
         <section class="section group bg-white rounded-2xl mb-5 shadow-sm overflow-hidden transition-transform hover:-translate-y-0.5 border border-gray-100">
             <div class="section-header p-6 flex items-center cursor-pointer border-b border-transparent">
@@ -44,9 +42,9 @@
             </div>
             <div class="section-content px-6 pb-8 text-gray-600 text-base overflow-hidden transition-all duration-400 ease-out group-[.collapsed]:max-h-0 group-[.collapsed]:pb-0 group-[.collapsed]:opacity-0">
                 <ul class="list-disc pl-6 space-y-2">
-                    <li><strong class="text-gray-900">Чистота и актуальность записей клиентов</strong> — ключ к пониманию, кто придёт на занятия и правильному распределению нагрузки тренеров.</li>
-                    <li><strong class="text-gray-900">Чёткое распределение ответственности</strong> между филиалами за подтверждение и ведение клиентов помогает избегать недоразумений.</li>
-                    <li><strong class="text-gray-900">Использование ИИ и цифровых инструментов</strong> для автоматизации ответов и организации коммуникаций значительно облегчает работу администраторов.</li>
+                    <li><strong class="text-gray-900">Чистота и актуальность записей клиентов</strong> — ключ к пониманию, кто придёт на занятия и правильному распределению нагрузки тренеров[cite: 1].</li>
+                    <li><strong class="text-gray-900">Чёткое распределение ответственности</strong> между филиалами за подтверждение и ведение клиентов помогает избегать недоразумений[cite: 1].</li>
+                    <li><strong class="text-gray-900">Использование ИИ и цифровых инструментов</strong> для автоматизации ответов и организации коммуникаций значительно облегчает работу администраторов[cite: 1].</li>
                 </ul>
             </div>
         </section>
@@ -55,17 +53,17 @@
         <section class="section group bg-white rounded-2xl mb-5 shadow-sm overflow-hidden transition-transform hover:-translate-y-0.5 border border-gray-100">
             <div class="section-header p-6 flex items-center cursor-pointer border-b border-transparent">
                 <div class="w-11 h-11 bg-blue-50 text-gray-900 rounded-xl flex items-center justify-center text-xl mr-4 shrink-0">🧩</div>
-                <h2 class="text-xl font-bold text-gray-900 flex-1 m-0">Управление записями и замочками</h2>
+                <h2 class="text-xl font-bold text-gray-900 flex-1 m-0">Управление записями и замочками в детских группах</h2>
                 <div class="section-toggle w-6 h-6 flex items-center justify-center text-gray-400 transition-transform duration-300 group-[.collapsed]:-rotate-90 shrink-0">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
                 </div>
             </div>
             <div class="section-content px-6 pb-8 text-gray-600 text-base overflow-hidden transition-all duration-400 ease-out group-[.collapsed]:max-h-0 group-[.collapsed]:pb-0 group-[.collapsed]:opacity-0">
-                <p class="mb-4">В детских группах возникли сложности с тем, что родители записывают детей самостоятельно, а также остаются «замочки» — фиксация клиента в группе без актуальной информации о его посещении. Это приводит к путанице.</p>
-                <p class="mb-6">Решение — очистить все замочки и перейти на систему обязательной предварительной записи: родители либо самостоятельно записываются через приложение, либо подтверждают участие сообщением с «плюсиком» в чате.</p>
+                <p class="mb-4">В детских группах возникли сложности с тем, что родители записывают детей самостоятельно, а также остаются «замочки» — фиксация клиента в группе без актуальной информации о его посещении. Это приводит к путанице: тренеры видят большое количество записанных, но по факту приходит меньше детей[cite: 1].</p>
+                <p class="mb-6">Решение — очистить все замочки и перейти на систему обязательной предварительной записи: родители либо самостоятельно записываются через приложение, либо подтверждают участие сообщением с «плюсиком» в чате. Это позволит контролировать реальное количество участников и корректно рассчитывать зарплату тренеров[cite: 1].</p>
                 <div class="bg-blue-100/60 p-6 rounded-xl border-l-4 border-blue-600">
                     <h4 class="text-gray-900 font-bold mb-2 flex items-center gap-2">💎 Рекомендация по детским группам</h4>
-                    <p class="m-0">Очистите замочки в группах, внедрите обязательную предварительную запись и информируйте родителей о необходимости подтверждения участия.</p>
+                    <p class="m-0">Очистите замочки в группах, внедрите обязательную предварительную запись и информируйте родителей о необходимости подтверждения участия. Обучайте родителей работе с приложением при покупке абонемента[cite: 1].</p>
                 </div>
             </div>
         </section>
@@ -74,49 +72,228 @@
         <section class="section group bg-white rounded-2xl mb-5 shadow-sm overflow-hidden transition-transform hover:-translate-y-0.5 border border-gray-100">
             <div class="section-header p-6 flex items-center cursor-pointer border-b border-transparent">
                 <div class="w-11 h-11 bg-blue-50 text-gray-900 rounded-xl flex items-center justify-center text-xl mr-4 shrink-0">🔑</div>
-                <h2 class="text-xl font-bold text-gray-900 flex-1 m-0">Юридическая безопасность</h2>
+                <h2 class="text-xl font-bold text-gray-900 flex-1 m-0">Закрепление ответственных взрослых за детей и юридическая безопасность</h2>
                 <div class="section-toggle w-6 h-6 flex items-center justify-center text-gray-400 transition-transform duration-300 group-[.collapsed]:-rotate-90 shrink-0">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
                 </div>
             </div>
             <div class="section-content px-6 pb-8 text-gray-600 text-base overflow-hidden transition-all duration-400 ease-out group-[.collapsed]:max-h-0 group-[.collapsed]:pb-0 group-[.collapsed]:opacity-0">
-                <p class="mb-4">За каждым ребёнком должен быть закреплён ответственный взрослый с контактным номером телефона. Это необходимо для безопасности и оперативной связи в случае чрезвычайных ситуаций.</p>
-                <p class="mb-6">Сбор согласий на обработку персональных данных и фото/видеосъёмку важен для юридической защиты студии.</p>
+                <p class="mb-4">За каждым ребёнком должен быть закреплён ответственный взрослый с контактным номером телефона. Это необходимо для безопасности и оперативной связи в случае чрезвычайных ситуаций — например, если ребёнка не забрали после занятия[cite: 1].</p>
+                <p class="mb-6">Сбор согласий на обработку персональных данных и фото/видеосъёмку важен для юридической защиты студии. Новым клиентам согласия выдаются при покупке абонемента, а информация о противопоказаниях и ограничениях фиксируется в электронной карточке клиента для информирования тренеров[cite: 1].</p>
                 <div class="bg-blue-100/60 p-6 rounded-xl border-l-4 border-blue-600">
                     <h4 class="text-gray-900 font-bold mb-2 flex items-center gap-2">💎 Важность фиксации данных</h4>
-                    <p class="m-0">Обязательно собирайте и фиксируйте согласия и контактные данные ответственных взрослых при регистрации ребёнка.</p>
+                    <p class="m-0">Обязательно собирайте и фиксируйте согласия и контактные данные ответственных взрослых при регистрации ребёнка. Это обеспечивает юридическую безопасность и комфортную работу студии[cite: 1].</p>
                 </div>
             </div>
         </section>
-        
-        <!-- Блок 3: Чек-лист -->
+
+        <!-- Секция 4 -->
+        <section class="section group bg-white rounded-2xl mb-5 shadow-sm overflow-hidden transition-transform hover:-translate-y-0.5 border border-gray-100">
+            <div class="section-header p-6 flex items-center cursor-pointer border-b border-transparent">
+                <div class="w-11 h-11 bg-blue-50 text-gray-900 rounded-xl flex items-center justify-center text-xl mr-4 shrink-0">⚙️</div>
+                <h2 class="text-xl font-bold text-gray-900 flex-1 m-0">Организация работы с заморозками и отпускными периодами клиентов</h2>
+                <div class="section-toggle w-6 h-6 flex items-center justify-center text-gray-400 transition-transform duration-300 group-[.collapsed]:-rotate-90 shrink-0">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </div>
+            </div>
+            <div class="section-content px-6 pb-8 text-gray-600 text-base overflow-hidden transition-all duration-400 ease-out group-[.collapsed]:max-h-0 group-[.collapsed]:pb-0 group-[.collapsed]:opacity-0">
+                <p class="mb-4">Клиенты, уходящие в отпуск или на больничный, ставятся на заморозку (замочек) в карточке, чтобы не списывать занятия и освобождать места для других. Важно своевременно снимать замочки и возвращать клиентов в группы после их возвращения[cite: 1].</p>
+                <p class="mb-6">Администраторы должны ставить себе задачи напоминаний о снятии заморозок и контролировать актуальность записей, чтобы не создавать лишних мест в группах и не вводить тренеров в заблуждение[cite: 1].</p>
+                <div class="bg-blue-100/60 p-6 rounded-xl border-l-4 border-blue-600">
+                    <h4 class="text-gray-900 font-bold mb-2 flex items-center gap-2">💎 Алгоритм с заморозками</h4>
+                    <p class="m-0">При уходе клиента в отпуск ставьте заморозку, фиксируйте даты и создавайте задачу о возвращении. Снимайте замочки перед отпуском, возвращайте после, чтобы поддерживать актуальность групп[cite: 1].</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция 5 -->
+        <section class="section group bg-white rounded-2xl mb-5 shadow-sm overflow-hidden transition-transform hover:-translate-y-0.5 border border-gray-100">
+            <div class="section-header p-6 flex items-center cursor-pointer border-b border-transparent">
+                <div class="w-11 h-11 bg-blue-50 text-gray-900 rounded-xl flex items-center justify-center text-xl mr-4 shrink-0">🧠</div>
+                <h2 class="text-xl font-bold text-gray-900 flex-1 m-0">Взаимодействие филиалов и распределение ответственности за клиентов</h2>
+                <div class="section-toggle w-6 h-6 flex items-center justify-center text-gray-400 transition-transform duration-300 group-[.collapsed]:-rotate-90 shrink-0">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </div>
+            </div>
+            <div class="section-content px-6 pb-8 text-gray-600 text-base overflow-hidden transition-all duration-400 ease-out group-[.collapsed]:max-h-0 group-[.collapsed]:pb-0 group-[.collapsed]:opacity-0">
+                <p class="mb-4">Взаимодействие между филиалами, например, Sunshine и Металлострой, требует чёткого распределения ответственности. Если клиент передается другому филиалу, переписку и подтверждение записи должен вести именно тот филиал, который принимает клиента[cite: 1].</p>
+                <p class="mb-6">Необходимо избегать ситуации, когда одновременно несколько филиалов подтверждают одного клиента — это приводит к путанице и конфликтам. Для упрощения работы администраторов лучше закрепить за каждым филиалом своих клиентов и задачи[cite: 1].</p>
+                <div class="bg-blue-100/60 p-6 rounded-xl border-l-4 border-blue-600">
+                    <h4 class="text-gray-900 font-bold mb-2 flex items-center gap-2">💎 Рекомендация по филиалам</h4>
+                    <p class="m-0">Установите чёткий протокол передачи клиентов между филиалами: первый филиал передаёт клиента, а второй ведёт переписку и подтверждает запись. Это снизит риски ошибок и повысит эффективность работы[cite: 1].</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция 6 -->
+        <section class="section group bg-white rounded-2xl mb-5 shadow-sm overflow-hidden transition-transform hover:-translate-y-0.5 border border-gray-100">
+            <div class="section-header p-6 flex items-center cursor-pointer border-b border-transparent">
+                <div class="w-11 h-11 bg-blue-50 text-gray-900 rounded-xl flex items-center justify-center text-xl mr-4 shrink-0">📈</div>
+                <h2 class="text-xl font-bold text-gray-900 flex-1 m-0">Организация и стандартизация переписок с клиентами</h2>
+                <div class="section-toggle w-6 h-6 flex items-center justify-center text-gray-400 transition-transform duration-300 group-[.collapsed]:-rotate-90 shrink-0">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </div>
+            </div>
+            <div class="section-content px-6 pb-8 text-gray-600 text-base overflow-hidden transition-all duration-400 ease-out group-[.collapsed]:max-h-0 group-[.collapsed]:pb-0 group-[.collapsed]:opacity-0">
+                <p class="mb-4">Главная цель переписки — продолжить диалог и привести клиента к нужному действию, например, покупке абонемента или записи на занятие. Для этого важно задавать вопросы последовательно и объяснять клиенту, зачем нужны дополнительные данные[cite: 1].</p>
+                <p class="mb-6">Не стоит перегружать клиента сразу множеством вопросов — лучше задавать их поэтапно, учитывая ответы и интересы клиента. При этом необходимо сохранять доброжелательность и устанавливать рамки, чтобы клиент понимал условия[cite: 1].</p>
+                <div class="bg-blue-100/60 p-6 rounded-xl border-l-4 border-blue-600">
+                    <h4 class="text-gray-900 font-bold mb-2 flex items-center gap-2">💎 Приёмы ведения переписки</h4>
+                    <p class="m-0">Отвечайте на вопросы клиента, уточняйте его цели, предлагайте варианты и берите инициативу на себя. Объясняйте необходимость сбора информации и избегайте перегрузки вопросами[cite: 1].</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция 7 -->
+        <section class="section group bg-white rounded-2xl mb-5 shadow-sm overflow-hidden transition-transform hover:-translate-y-0.5 border border-gray-100">
+            <div class="section-header p-6 flex items-center cursor-pointer border-b border-transparent">
+                <div class="w-11 h-11 bg-blue-50 text-gray-900 rounded-xl flex items-center justify-center text-xl mr-4 shrink-0">🛠️</div>
+                <h2 class="text-xl font-bold text-gray-900 flex-1 m-0">Автоматизация ответов с помощью ИИ и организация рабочего пространства</h2>
+                <div class="section-toggle w-6 h-6 flex items-center justify-center text-gray-400 transition-transform duration-300 group-[.collapsed]:-rotate-90 shrink-0">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </div>
+            </div>
+            <div class="section-content px-6 pb-8 text-gray-600 text-base overflow-hidden transition-all duration-400 ease-out group-[.collapsed]:max-h-0 group-[.collapsed]:pb-0 group-[.collapsed]:opacity-0">
+                <p class="mb-4">Администраторы сталкиваются с большим количеством задач и сообщений, что усложняет своевременное и корректное реагирование. Использование ИИ, например, ChatGPT или DeepSeek, помогает формировать ответы в стиле студии, учитывая нюансы клиентов и историю переписки[cite: 1].</p>
+                <p class="mb-6">Планируется создание единого онлайн-пространства для хранения чатов, задач и базы знаний без необходимости использования VPN. Это позволит быстро находить инструкции, скрипты и документы, облегчая работу и снижая риск потери информации[cite: 1].</p>
+                <div class="bg-blue-100/60 p-6 rounded-xl border-l-4 border-blue-600">
+                    <h4 class="text-gray-900 font-bold mb-2 flex items-center gap-2">💎 Советы по автоматизации</h4>
+                    <p class="m-0">Используйте ИИ-помощников для подготовки ответов, фильтруйте их через свой опыт. Организуйте централизованное рабочее пространство с чатами, задачниками и базой знаний для удобства и эффективности[cite: 1].</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция 8 -->
+        <section class="section group bg-white rounded-2xl mb-5 shadow-sm overflow-hidden transition-transform hover:-translate-y-0.5 border border-gray-100">
+            <div class="section-header p-6 flex items-center cursor-pointer border-b border-transparent">
+                <div class="w-11 h-11 bg-blue-50 text-gray-900 rounded-xl flex items-center justify-center text-xl mr-4 shrink-0">📌</div>
+                <h2 class="text-xl font-bold text-gray-900 flex-1 m-0">Организация смен и распределение обязанностей</h2>
+                <div class="section-toggle w-6 h-6 flex items-center justify-center text-gray-400 transition-transform duration-300 group-[.collapsed]:-rotate-90 shrink-0">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </div>
+            </div>
+            <div class="section-content px-6 pb-8 text-gray-600 text-base overflow-hidden transition-all duration-400 ease-out group-[.collapsed]:max-h-0 group-[.collapsed]:pb-0 group-[.collapsed]:opacity-0">
+                <p class="mb-4">График работы администраторов корректируется с учётом отпусков и занятости. Важно заранее планировать смены, чтобы обеспечить замену и равномерное распределение нагрузки[cite: 1].</p>
+                <p class="mb-6">Передача обязанностей по заказу расходников и составлению графика также требует обучения и планирования, чтобы избежать сбоев в работе студии во время отсутствия ответственных сотрудников[cite: 1].</p>
+                <div class="bg-blue-100/60 p-6 rounded-xl border-l-4 border-blue-600">
+                    <h4 class="text-gray-900 font-bold mb-2 flex items-center gap-2">💎 Рекомендации по сменам и расходникам</h4>
+                    <p class="m-0">Планируйте смены заранее, обучайте заменяющих сотрудников, фиксируйте заказы расходников с возможностью самостоятельного оформления и компенсации средств[cite: 1].</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция 9 -->
+        <section class="section group bg-white rounded-2xl mb-5 shadow-sm overflow-hidden transition-transform hover:-translate-y-0.5 border border-gray-100">
+            <div class="section-header p-6 flex items-center cursor-pointer border-b border-transparent">
+                <div class="w-11 h-11 bg-blue-50 text-gray-900 rounded-xl flex items-center justify-center text-xl mr-4 shrink-0">💡</div>
+                <h2 class="text-xl font-bold text-gray-900 flex-1 m-0">Поддержка коммуникация и обратная связь в команде</h2>
+                <div class="section-toggle w-6 h-6 flex items-center justify-center text-gray-400 transition-transform duration-300 group-[.collapsed]:-rotate-90 shrink-0">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </div>
+            </div>
+            <div class="section-content px-6 pb-8 text-gray-600 text-base overflow-hidden transition-all duration-400 ease-out group-[.collapsed]:max-h-0 group-[.collapsed]:pb-0 group-[.collapsed]:opacity-0">
+                <p class="mb-4">Регулярные встречи и отчёты помогают поддерживать команду в курсе дел и решать возникающие вопросы. Важно фиксировать прочтение сообщений и реакцию на них для понимания вовлечённости и ответственности[cite: 1].</p>
+                <p class="mb-6">Обсуждение сложных моментов и обмен опытом в рамках команды способствуют росту профессионализма и улучшению качества клиентского сервиса[cite: 1].</p>
+                <div class="bg-blue-100/60 p-6 rounded-xl border-l-4 border-blue-600">
+                    <h4 class="text-gray-900 font-bold mb-2 flex items-center gap-2">💎 Рекомендации по коммуникации</h4>
+                    <p class="m-0">Проводите регулярные встречи, используйте реакции на сообщения для подтверждения прочтения, фиксируйте проблемные ситуации и разбирайте их совместно для повышения эффективности работы[cite: 1].</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Чек-лист -->
         <div class="checklist bg-white p-8 rounded-2xl mt-10 mb-8 shadow-sm border-2 border-blue-50">
             <div class="mb-6">
                 <h2 class="text-2xl font-bold text-gray-900 mb-1">🚀 Чек-лист внедрения</h2>
-                <p class="text-sm text-gray-500">Отмечайте выполненное — прогресс сохранится</p>
+                <p class="text-sm text-gray-500">Отмечайте выполненное — прогресс сохранится при следующем открытии файла</p>
             </div>
             
+            <!-- Группа 1 -->
             <h3 class="text-xs uppercase tracking-widest text-pink-500 font-bold mt-6 mb-3">Прямо сейчас</h3>
             
-            <!-- Пункт 1 -->
             <div class="chk-item flex gap-4 py-3 border-b border-gray-100 cursor-pointer transition-opacity hover:opacity-80 group">
                 <div class="w-6 h-6 border-2 border-gray-400 rounded-md shrink-0 mt-0.5 transition-colors group-[.checked]:bg-blue-600 group-[.checked]:border-blue-600 flex items-center justify-center">
                     <svg class="opacity-0 group-[.checked]:opacity-100 text-white w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                 </div>
                 <div>
-                    <strong class="block text-[15px] text-gray-900 transition-colors group-[.checked]:text-gray-400 group-[.checked]:line-through">Очистить замочки в детских группах</strong>
-                    <span class="text-[13px] text-gray-500">Чтобы в списках были только реально записанные</span>
+                    <strong class="block text-[15px] text-gray-900 transition-colors group-[.checked]:text-gray-400 group-[.checked]:line-through">Очистить замочки в детских группах[cite: 1]</strong>
+                    <span class="text-[13px] text-gray-500">Чтобы в списках были только реально записанные и подтверждённые дети[cite: 1]</span>
                 </div>
             </div>
 
-            <!-- Пункт 2 -->
             <div class="chk-item flex gap-4 py-3 border-b border-gray-100 cursor-pointer transition-opacity hover:opacity-80 group">
                 <div class="w-6 h-6 border-2 border-gray-400 rounded-md shrink-0 mt-0.5 transition-colors group-[.checked]:bg-blue-600 group-[.checked]:border-blue-600 flex items-center justify-center">
                     <svg class="opacity-0 group-[.checked]:opacity-100 text-white w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                 </div>
                 <div>
-                    <strong class="block text-[15px] text-gray-900 transition-colors group-[.checked]:text-gray-400 group-[.checked]:line-through">Собрать согласия новых клиентов</strong>
-                    <span class="text-[13px] text-gray-500">Для юридической безопасности</span>
+                    <strong class="block text-[15px] text-gray-900 transition-colors group-[.checked]:text-gray-400 group-[.checked]:line-through">Внедрить обязательную предварительную запись с подтверждением «плюсиком»[cite: 1]</strong>
+                    <span class="text-[13px] text-gray-500">Обучить родителей пользоваться приложением и подтверждать участие[cite: 1]</span>
+                </div>
+            </div>
+
+            <div class="chk-item flex gap-4 py-3 border-b border-gray-100 cursor-pointer transition-opacity hover:opacity-80 group">
+                <div class="w-6 h-6 border-2 border-gray-400 rounded-md shrink-0 mt-0.5 transition-colors group-[.checked]:bg-blue-600 group-[.checked]:border-blue-600 flex items-center justify-center">
+                    <svg class="opacity-0 group-[.checked]:opacity-100 text-white w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                </div>
+                <div>
+                    <strong class="block text-[15px] text-gray-900 transition-colors group-[.checked]:text-gray-400 group-[.checked]:line-through">Собрать и зафиксировать согласия новых клиентов[cite: 1]</strong>
+                    <span class="text-[13px] text-gray-500">Для юридической безопасности и информирования тренеров о противопоказаниях[cite: 1]</span>
+                </div>
+            </div>
+
+            <!-- Группа 2 -->
+            <h3 class="text-xs uppercase tracking-widest text-pink-500 font-bold mt-6 mb-3">На этой неделе</h3>
+
+            <div class="chk-item flex gap-4 py-3 border-b border-gray-100 cursor-pointer transition-opacity hover:opacity-80 group">
+                <div class="w-6 h-6 border-2 border-gray-400 rounded-md shrink-0 mt-0.5 transition-colors group-[.checked]:bg-blue-600 group-[.checked]:border-blue-600 flex items-center justify-center">
+                    <svg class="opacity-0 group-[.checked]:opacity-100 text-white w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                </div>
+                <div>
+                    <strong class="block text-[15px] text-gray-900 transition-colors group-[.checked]:text-gray-400 group-[.checked]:line-through">Установить протокол передачи клиентов между филиалами[cite: 1]</strong>
+                    <span class="text-[13px] text-gray-500">Чтобы каждый филиал отвечал за своих клиентов и переписку[cite: 1]</span>
+                </div>
+            </div>
+
+            <div class="chk-item flex gap-4 py-3 border-b border-gray-100 cursor-pointer transition-opacity hover:opacity-80 group">
+                <div class="w-6 h-6 border-2 border-gray-400 rounded-md shrink-0 mt-0.5 transition-colors group-[.checked]:bg-blue-600 group-[.checked]:border-blue-600 flex items-center justify-center">
+                    <svg class="opacity-0 group-[.checked]:opacity-100 text-white w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                </div>
+                <div>
+                    <strong class="block text-[15px] text-gray-900 transition-colors group-[.checked]:text-gray-400 group-[.checked]:line-through">Начать использовать ИИ для подготовки ответов в переписках[cite: 1]</strong>
+                    <span class="text-[13px] text-gray-500">Ускорить работу администраторов и повысить качество коммуникации[cite: 1]</span>
+                </div>
+            </div>
+
+            <!-- Группа 3 -->
+            <h3 class="text-xs uppercase tracking-widest text-pink-500 font-bold mt-6 mb-3">На перспективу</h3>
+
+            <div class="chk-item flex gap-4 py-3 border-b border-gray-100 cursor-pointer transition-opacity hover:opacity-80 group">
+                <div class="w-6 h-6 border-2 border-gray-400 rounded-md shrink-0 mt-0.5 transition-colors group-[.checked]:bg-blue-600 group-[.checked]:border-blue-600 flex items-center justify-center">
+                    <svg class="opacity-0 group-[.checked]:opacity-100 text-white w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                </div>
+                <div>
+                    <strong class="block text-[15px] text-gray-900 transition-colors group-[.checked]:text-gray-400 group-[.checked]:line-through">Организовать единое онлайн-пространство для хранения чатов и задач[cite: 1]</strong>
+                    <span class="text-[13px] text-gray-500">Упростить доступ к важной информации и снизить зависимость от VPN[cite: 1]</span>
+                </div>
+            </div>
+
+            <div class="chk-item flex gap-4 py-3 border-b border-gray-100 cursor-pointer transition-opacity hover:opacity-80 group">
+                <div class="w-6 h-6 border-2 border-gray-400 rounded-md shrink-0 mt-0.5 transition-colors group-[.checked]:bg-blue-600 group-[.checked]:border-blue-600 flex items-center justify-center">
+                    <svg class="opacity-0 group-[.checked]:opacity-100 text-white w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                </div>
+                <div>
+                    <strong class="block text-[15px] text-gray-900 transition-colors group-[.checked]:text-gray-400 group-[.checked]:line-through">Разработать систему напоминаний и контроля заморозок и возвратов клиентов[cite: 1]</strong>
+                    <span class="text-[13px] text-gray-500">Для поддержания актуальности групп и лояльности клиентов[cite: 1]</span>
+                </div>
+            </div>
+
+            <div class="chk-item flex gap-4 py-3 border-b border-gray-100 cursor-pointer transition-opacity hover:opacity-80 group">
+                <div class="w-6 h-6 border-2 border-gray-400 rounded-md shrink-0 mt-0.5 transition-colors group-[.checked]:bg-blue-600 group-[.checked]:border-blue-600 flex items-center justify-center">
+                    <svg class="opacity-0 group-[.checked]:opacity-100 text-white w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                </div>
+                <div>
+                    <strong class="block text-[15px] text-gray-900 transition-colors group-[.checked]:text-gray-400 group-[.checked]:line-through">Планировать смены и обучение замещающих сотрудников[cite: 1]</strong>
+                    <span class="text-[13px] text-gray-500">Обеспечить бесперебойную работу студии в периоды отпусков и отсутствия[cite: 1]</span>
                 </div>
             </div>
 
@@ -125,19 +302,20 @@
                 <div class="h-1.5 bg-gray-100 rounded-full overflow-hidden">
                     <div class="chk-progress-fill h-full bg-blue-600 w-0 transition-all duration-300"></div>
                 </div>
-                <div class="chk-progress-label text-[13px] text-gray-500 mt-2 text-right font-medium">0 из 2</div>
+                <div class="chk-progress-label text-[13px] text-gray-500 mt-2 text-right font-medium">0 из 8</div>
             </div>
         </div>
 
         <!-- Подвал -->
         <footer class="text-center py-10 mt-5 border-t border-gray-200">
             <div class="mb-4">
-                <span class="bg-white inline-block px-4 py-1.5 rounded-full text-[13px] font-medium text-gray-900 border border-gray-200">🎬 86 мин видео → 📖 ~6 мин чтения</span>
+                <span class="bg-white inline-block px-4 py-1.5 rounded-full text-[13px] font-medium text-gray-900 border border-gray-200">🎬 86 мин видео → 📖 ~6 мин чтения[cite: 1]</span>
             </div>
-            <a href="#" class="inline-block bg-blue-600 hover:bg-pink-500 text-white font-bold text-base px-7 py-3.5 rounded-full transition-all hover:-translate-y-0.5">Сделать конспект своего видео →</a>
+            <a href="https://t.me/BukvitsaAI_bot?start=193351705" target="_blank" rel="noopener" class="inline-block bg-blue-600 hover:bg-pink-500 text-white font-bold text-base px-7 py-3.5 rounded-full transition-all hover:-translate-y-0.5 shadow-sm">Сделать конспект своего видео →</a>
+            <div class="text-sm text-gray-500 mt-4">Создано в <a href="https://t.me/BukvitsaAI_bot?start=193351705" target="_blank" rel="noopener" class="text-blue-600 font-bold hover:text-pink-500">«Буквице»</a>[cite: 1]</div>
         </footer>
 
-        <!-- Скрипты для логики -->
+        <!-- Скрипты -->
         <script>
             document.addEventListener('click', function (e) {
                 // Открытие/закрытие секций
@@ -171,14 +349,13 @@
                 localStorage.setItem('studio-checklist', JSON.stringify(checked));
             }
 
-            // Загрузка при открытии
+            // Загрузка состояния при открытии
             const saved = JSON.parse(localStorage.getItem('studio-checklist') || '[]');
             document.querySelectorAll('.chk-item').forEach((item, i) => {
                 if (saved.includes(i)) item.classList.add('checked');
             });
             updateProgress();
         </script>
-
     </div>
 </body>
 </html>
