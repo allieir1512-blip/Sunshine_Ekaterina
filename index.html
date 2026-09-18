@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конспект встречи — Sunshine Dance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        deepteal: '#0E6B68',
+                        sage: '#8FB9A8',
+                        porcelain: '#F4F6F5',
+                        softamber: '#C4975A',
+                        mineralblue: '#3A6EA5'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-porcelain text-gray-800 p-4 md:p-8 font-sans">
+    <div class="max-w-4xl mx-auto space-y-6">
+
+        <!-- НАВИГАЦИЯ ПО ДАТАМ -->
+        <nav class="bg-white rounded-2xl p-4 shadow-sm border border-gray-200 flex flex-wrap gap-4 items-center justify-between mb-2">
+            <div class="font-bold text-deepteal flex items-center gap-2">
+                <span class="text-softamber text-xl">☀️</span> База конспектов
+            </div>
+            <div class="flex flex-wrap gap-2 text-sm">
+                <!-- Текущая страница (некликабельна, так как мы на ней) -->
+                <span class="px-4 py-2 rounded-xl bg-deepteal text-white font-medium shadow-sm cursor-default">
+                    Последняя встреча (Новая)
+                </span>
+                <!-- Ссылка на СТАРУЮ страницу (архив) -->
+                <a href="meeting-12-07.html" class="px-4 py-2 rounded-xl bg-gray-100 text-gray-600 hover:bg-sage hover:text-white transition-colors">
+                    Архив: прошлая встреча
+                </a>
+            </div>
+        </nav>
+
+        <!-- ШАПКА НОВОЙ ВСТРЕЧИ -->
+        <header class="bg-white rounded-3xl p-6 md:p-8 shadow-sm border-t-4 border-sage">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="bg-softamber text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+                    Sunshine Dance
+                </span>
+                <!-- Текущая дата -->
+                <span class="text-sm text-gray-500 font-medium">18 Сентября 2026</span>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-extrabold text-deepteal mb-3">
+                Солнечного дня! Вводные для команды ☀️
+            </h1>
+            <p class="text-gray-600">Спикер: Александра Решетько | Роль: Продюсер / Руководитель</p>
+        </header>
+
+        <!-- Место для следующего блока (Контент) -->
+
+    </div>
+</body>
+</html>
