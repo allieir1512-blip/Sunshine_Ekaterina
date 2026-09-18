@@ -16,6 +16,23 @@
 </head>
 <body class="bg-slate-100 text-gray-700 py-8 px-4 md:px-8">
     <div class="max-w-4xl mx-auto space-y-6">
+
+<!-- БЛОК 1: НАВИГАЦИЯ ПО ДАТАМ -->
+        <nav class="bg-white rounded-2xl p-4 shadow-sm border border-gray-200 flex flex-wrap gap-4 items-center justify-between mb-2">
+            <div class="font-bold text-gray-800 flex items-center gap-2">
+                <span class="text-blue-600">☀️</span> База конспектов
+            </div>
+            <div class="flex flex-wrap gap-2 text-sm">
+                <!-- Ссылка на НОВУЮ страницу (которую мы создадим следующей) -->
+                <a href="index.html" class="px-4 py-2 rounded-xl bg-gray-100 text-gray-600 hover:bg-gray-200 transition-colors">
+                    Последняя встреча (Новая)
+                </a>
+                <!-- Текущая страница (активная кнопка) -->
+                <span class="px-4 py-2 rounded-xl bg-blue-600 text-white font-medium shadow-sm cursor-default">
+                    Архив: прошлая встреча
+                </span>
+            </div>
+        </nav>
         
         <!-- HEADER / HERO SECTION -->
         <header class="bg-white rounded-2xl p-6 md:p-10 shadow-sm border-t-4 border-blue-600">
